@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Portfolio List</h1>
+{% for portfolio in portfolios %}
+<div class="card">
+  <a href="{% url 'detail' portfolio.id %}">
+    <div class="card-content">
+    <span class="card-title">{{ portfolio.name }}</span>
+    <p>Tech: {{ portfolio.tech }}</p>
+  </div>
+</a>
+</div>
+{% endfor %}
+{% endblock %}
