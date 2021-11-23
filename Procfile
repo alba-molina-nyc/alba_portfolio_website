@@ -1,0 +1,1 @@
+web: gunicorn alba_portfolio_website.wsgi
