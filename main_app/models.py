@@ -8,6 +8,7 @@ class Portfolio(models.Model):
     demo = models.URLField()
     deployed = models.URLField()
     code = models.URLField()
+    img = models.URLField()
     
     def __str__(self):
         return self.name
@@ -15,6 +16,7 @@ class Portfolio(models.Model):
 class Blog(models.Model):
     title = models.TextField()
     writing = models.TextField()
+    img = models.URLField()
 
     def __str__(self):
         return self.title
