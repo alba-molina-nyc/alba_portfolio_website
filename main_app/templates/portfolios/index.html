@@ -1,13 +1,19 @@
 {% extends 'base.html' %} {% block content %}
 <h1>Portfolio List</h1>
 {% for portfolio in portfolios %}
-<div class="card">
+
+
+
+
+<div class="card-panel hoverable">
   <a href="{% url 'detail' portfolio.id %}">
     <div class="card-content">
-    <span class="card-title">{{ portfolio.name }}</span>
-    <p>Tech: {{ portfolio.tech }}</p>
+    <span class="card-title"><h1> {{ portfolio.name }}</h1></span>
+    <h5> Technologies used: </h5>
+    <p>{{ portfolio.tech }} </p>
   </div>
 </a>
 </div>
 {% endfor %}
 {% endblock %}
+

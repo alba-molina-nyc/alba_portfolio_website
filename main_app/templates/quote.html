@@ -1,15 +1,27 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-<h1>Get a Quote </h1>
 
-<form action="" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" class="btn green" value="Submit">
-</form>
+
+<main class="container">
+
+    <h1>Get a Quote </h1>
+    <div style="background-image: url(https://images.unsplash.com/photo-1635398517284-2f3c7fef7fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU4fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60) ">
+    <form action="" method="post" class="white-text">
+        <input type="hidden" name="csrfmiddlewaretoken" value="vPoDQF2fmxgUOMbpsGhKskt2y64B47SGHdoqQudTJVoaW5dxdK3fSneM0K43bpsh"class="white-text text-darken-10">
+        <label for="id_email"class="white-text text-darken-10">Email:</label><input type="email" name="email" maxlength="254" required="" id="id_email" class="white-text text-darken-10">
+        <label for="id_first_name" class="white-text text-darken-10">First name:</label><textarea name="first_name" cols="40" rows="10" required="" id="id_first_name"class="white-text text-darken-10"></textarea>
+        <label for="id_last_name" class="white-text text-darken-10">Last name:</label><textarea class="white-text text-darken-10" name="last_name" cols="40" rows="10" required="" id="id_last_name"></textarea>
+        <label for="id_project_start_date" class="white-text text-darken-10">Project start date:</label><input type="text" name="project_start_date" required="" class="white-text text-darken-10" id="id_project_start_date">
+        <label for="id_project_end_date" class="white-text text-darken-10">Project end date:</label><input type="text" class="white-text text-darken-10" name="project_end_date" required="" id="id_project_end_date">
+        <label for="id_phone" class="white-text text-darken-10">Phone:</label><textarea name="phone" class="white-text text-darken-10" cols="40" rows="10" required="" id="id_phone"></textarea>
+        <label for="id_project_details" class="white-text text-darken-10">Project details:</label><textarea name="project_details" class="white-text text-darken-10"cols="40" rows="10" required="" id="id_project_details"></textarea>
+        <input type="submit" class="btn  right" value="Submit">
+    </form>
+</div>
 <script>
-    
-</script>
 
-{% endblock %}
+</script>
+</main>
+
+      {% endblock %}

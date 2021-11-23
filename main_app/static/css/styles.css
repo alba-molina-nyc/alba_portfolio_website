@@ -2,6 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    color: white;
   }
   
   main {
@@ -12,3 +13,19 @@ body {
     padding-top: 0;
     text-align: right;
   }
+  img#alba {
+    border-style:double;
+    border-top-style: 30%;
+    border-right-style: 300%;
+    border-bottom-style: 300%;
+    border-left-style: 300%;
+  }
+
+  form#quote {
+    background-color: green;
+  }
+
+  label {
+    font-size: .8rem;
+    color: floralwhite;
+}

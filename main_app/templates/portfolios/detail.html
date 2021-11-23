@@ -2,22 +2,30 @@
 {% load static %}
 {% block content %}
 <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
-<h1>Project Details</h1>
+
 
 <div class="card">
   <div class="card-content">
-    <span class="card-title">{{ portfolio.name }}</span>
-    <p>Tech Used: {{ portfolio.tech }}</p>
-    <p>Project Description: {{ portfolio.description }}</p>
+    <span class="card-title"><h1>{{ portfolio.name }} </h1></span>
+    <h5>Project Description: </h5>
+    <p> {{ portfolio.description }}</p>
 
-    <a href="{{ portfolio.demo }}"target="_blank"><img src="https://i.imgur.com/uNTCAOq.png" alt="demo" style="width:20%;height:38%;"></a>
+    <h5>Watch 2 min Demo:</h5>
+
+
+  
+    <div class="hoverable">
+    <a href="{{ portfolio.demo }}"target="_blank"><img src="https://media.istockphoto.com/photos/new-house-picture-id1295680594?b=1&k=20&m=1295680594&s=170667a&w=0&h=U5OW-dndWISAt7Kyor_UJAvRrXReDCtceVi7uNDoatU=" style="width:100%;height:100%"></a>
+  </div>
+
+    <h5>Technologies Used: </h5>
+    <p>Tech Used: {{ portfolio.tech }}</p>
   </div>
   <div class="card-action">
 
-    <a href="{{ portfolio.deployed}}"target="_blank"><img src="https://media.istockphoto.com/photos/businessman-watching-a-movie-with-transparent-tablet-picture-id864474980?b=1&k=20&m=864474980&s=170667a&w=0&h=bCy5l0L5b5IancVrnQOiix6jwqdZIH2u_YLYWVuJZ3o=" alt="HTML tutorial" style="width:20%;height:50"> Deployed Link </a>
-
-
-    <a href="{{ portfolio.code}}"target="_blank"><img src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374?k=20&m=1047259374&s=612x612&w=0&h=pt3XbBvrmiYgoYmVzsaUeXtV8vw_jJI9Ly8P7AL6Qig=" alt="HTML tutorial" style="width:20%;height:20%"> Link to Code </a>
+    <a href="{{ portfolio.deployed }}"target="_blank"><img src="https://media.istockphoto.com/photos/businessman-watching-a-movie-with-transparent-tablet-picture-id864474980?b=1&k=20&m=864474980&s=170667a&w=0&h=bCy5l0L5b5IancVrnQOiix6jwqdZIH2u_YLYWVuJZ3o=" alt="deployed" style="width:20%;height:50" class="hoverable"> DEPLOYED LINK </a>
+   
+    <a href="{{portfolio.code}}"target="_blank"><img src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374?k=20&m=1047259374&s=612x612&w=0&h=pt3XbBvrmiYgoYmVzsaUeXtV8vw_jJI9Ly8P7AL6Qig=" alt="code" style="width:20%;height:20%" class="hoverable"> CHECK OUT THE CODE </a>
 
   </div>
 </div>
