@@ -21,11 +21,3 @@ body {
     border-left-style: 300%;
   }
 
-  form#quote {
-    background-color: green;
-  }
-
-  label {
-    font-size: .8rem;
-    color: floralwhite;
-}
