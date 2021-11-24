@@ -10,32 +10,33 @@ style="background-image: url(https://media.istockphoto.com/photos/golden-four-le
 <form action="" method="post">
     {% csrf_token %}
    {{ contact_form.as_p }}
-
+<b>
     <tr>
         <th>
-            <label for="id_email" class="blue-text">Email:</label>
+            <label for="id_email" class="black-text">Email:</label>
         </th>
         <td>
-            <input type="email" class="blue-text text-darken-10"name="email" maxlength="254" required id="id_email">
+            <input type="email" class="black-text text-darken-10"name="email" maxlength="254" required id="id_email">
         </td>
     </tr>
     <tr>
         <th>
-            <label for="id_subject"class="blue-text text-darken-10">Subject:</label>
+            <label for="id_subject"class="black-text text-darken-10">Subject:</label>
         </th>
         <td>
-            <input type="text" name="subject" maxlength="255" required id="id_subject"class="blue-text ">
+            <input type="text" name="subject" maxlength="255" required id="id_subject"class="black-text ">
         </td>
     </tr>
     <tr>
         <th>
-            <label for="id_message"class="blue-text text-darken-10">Message:</label>
+            <label for="id_message"class="black-text text-darken-10">Message:</label>
         </th>
         <td>
       
-            <textarea name="message" cols="40" rows="10" required id="id_message"class="blue-text ;"></textarea>
+            <textarea name="message" cols="40" rows="10" required id="id_message"class="black-text ;"></textarea>
  
         </td>
+    </b>
     </tr>
 </div>
 <br>
