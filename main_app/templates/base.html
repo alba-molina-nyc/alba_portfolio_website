@@ -1,57 +1,47 @@
 {% load static %}
+
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pythonistar</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="stylesheet"  href="{% static 'css/features.js' %}"></script>
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-   
-   
-  </head>
-  <body style="background-image: url('https://i.imgur.com/78vNB67.gif')">
-    <header class="navbar-fixed">
-      <nav>
-        <div class="light-blue darken-3 nav-wrapper">
-            <ul>
-                <li><a href="{% url 'home' %}" class="left brand-logo">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pythonista</title>
+<!-- Local CSS -->
+<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+<script href="{% static 'css/script.css' %}">></script>
+<!-- Materialize CSS -->
+<!-- cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
-                 
-                Pythonistar</a></li>
-          
-                
-            
-            </ul>
-            <ul class="right">
-                <ul class="right"> 
-                  <li><a href="{% url 'index' %}">Portfolio</a></li>
-                    <li><a href="{% url 'resume' %}">Resume</a></li>
-                    <li><a href="{% url 'blogs' %}">Blog</a></li>
-                    <li><a href="{% url 'quote' %}">Get a Quote</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                </ul>
-            </ul>
-        </div>
-      </nav>
-    </header>
+ 
+</head>
 
-    <main class="container"class="white-text">
-  </td>
-      {% block content %}
-      {% endblock %}
-    
+<body></body>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+ 
+  <header>
+    <nav class= "light-blue darken-3 nav-wrapper">
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="{% url 'home' %}" class="left brand-logo">Pythonistar💫</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="{% url 'index' %}">Portfolio</a></li>
+          <li><a href="{% url 'resume' %}">Resume</a></li>
+          <li><a href="{% url 'blogs' %}">Blog</a></li>
+          <li><a href="{% url 'quote' %}">Get a Quote</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container"  style="background-image: url('https://i.imgur.com/78vNB67.gif')">
+    {% block content %}
+    {% endblock %}
   </main>
+ <footer class="light-blue darken-3 page-footer">
   <p>
     <a href="https://www.linkedin.com/in/albamolina/" 
     target="_blank" 
@@ -61,44 +51,37 @@
     style="width:100%;height:100%"
     target="_blank"
     class="circle">
-  </i>  </a>
-    
+   </a>
+   
     <a href="https://github.com/alba-molina-nyc" 
     target="_blank" 
     class="btn-floating btn-small pulse">
-    <img 
-    src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
     alt="code" 
     style="width:100%;height:100%"
     target="_blank"
     class="circle">
-  </i>  </a>
-    
-    <a href=
-    "https://github.com/alba-molina-nyc" 
+   </a>
+
+    <a href="https://github.com/alba-molina-nyc" 
     target="_blank" 
     class="btn-floating btn-small pulse">
     <img src="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg.twimg.1920.jpg" 
     alt="code" 
     style="width:100%;height:100%"
-    target="_blank" 
+    target="_blank"
     class="circle">
-  </i>  </a>
-  </p>
-  <footer class="light-blue darken-3 page-footer">
-  
+   </a>
+   </p>
+   <p class="light-blue darken-3">All Rights Reserved, &copy; 2021 Pythonist💫r</p>
+   <div class="right">
    
-    <div class="right">
-    
-    </div>
-    All Rights Reserved, &copy; 2021 Alba Molina
 
+   </div>
+ 
    
-      
-</footer>
-
-</body>
-
-</html>
-
-<!-- <img src="https://i.imgur.com/zLe9LeO.gif"  alt="logo"> -->
+ </footer>
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+  </html>

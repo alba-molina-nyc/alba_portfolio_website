@@ -1,43 +1,51 @@
 {% extends 'base.html' %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+{% load static %}
 {% block content %}
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 
-<h4 class="teal-text lighten-4">ABOUT ALBA MOLINA</h4>
-<div class="col s6 m8 offset-m2 l6 offset-l3">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <h1>About Pythonista</h1>
+    <h4>Alba Molina</h4>
+    <div class="carousel">
+      <a href="#one!" 
+      class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1633119446564-877e2c2ae501?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" 
+      alt="">
+    </a>
+    <a href="#two!" 
+      class="carousel-item">
+      <img src="https://i.imgur.com/K88Uaw3.gif" 
+      alt="">
+    </a>
+    <a href="#three!" 
+      class="carousel-item">
+      <img src="https://i.imgur.com/K88Uaw3.gif" 
+      alt="">
+    </a>
+  </div>
 
- 
-      <div class="row valign-wrapper">
-        <div class="col s4">
-          <img src="https://i.imgur.com/5Y1JUrz.png"  simg class="materialboxed" width="270" >
-        </div>
-        <div class="col s10">
-          <p class="teal-text">What differentiates good from great is the time they dedicate to their craft</p>
-        
-        </div>
-      </div>
-    </div>
-<blockquote class="card-panel grey lighten-3">
-  <b class="teal-text darken-4">
-Turns out making technology sexy through words as a BDR made me realize that I also wanted to build sexy software! I am obsessed with making people's tedious day to day worklife easier so that they can spend time focusing on what really matters to them. 
-  </b>
-</blockquote>
-<blockquote class="card-panel grey lighten-3">
-  <b class="teal-text darken-4">
-My path from Business/Sales Development Leadership and into the developer world is intentionally geared torwards my ultimate goal of founding something of my own.
-</b>
-</blockquote>
-<blockquote class="card-panel pink lighten-5">
-  <b class="teal-text darken-4">
-I think what really distinguished me from the pack throughout my entire sales career was my work ethic, communication skills, as well as my growth mindset. That said, those three items set me apart as I look for a backend developer role at a fast growth software company. 
-</b>
-</blockquote>
-<p><img src="https://i.imgur.com/J7rtYGK.gif" height="200px"> <b class="orange-text darken-4"> Hire Me!!</b>
-</p>
-    
+    <body>
 
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.carousel').carousel
+        });
+        </script>
+    </body>
 
-
+  </html>
 
 {% endblock %}
