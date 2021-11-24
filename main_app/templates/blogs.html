@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <h1 class="black-text">Blogs</h1>
+<hr />
 {% for blog in blogs %}
 <div class="card">
   <a href="{% url 'bletail' blog.id %}">
