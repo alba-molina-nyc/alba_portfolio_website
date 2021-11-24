@@ -30,6 +30,9 @@ def bletail(request, blog_id):
 def home(request):
     return render(request, 'home.html')
 
+def tldr(request):
+    return render(request, 'tldr.html')
+
 def quote(request):
     if request.method == 'POST':
         form = QuoteForm(request.POST)
