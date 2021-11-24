@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% block content %}
-<h1 class="blue-text">Portfolio List</h1>
+<h1 class="white-text lighten-4">Portfolio List</h1>
 {% for portfolio in portfolios %}
 
 <div class="card-panel hoverable">
   <a href="{% url 'detail' portfolio.id %}">
     <div class="card-content">
-    <span class="card-title"><h1> {{ portfolio.name }}</h1></span>
-    <h5> Technologies used: </h5>
-    <p>{{ portfolio.tech }} </p>
+    <span class="card-title"><h1 class="teal-text"> {{ portfolio.name }}</h1></span>
+    <h5 class="teal-text"> Technologies used: </h5>
+    <p class="teal-text">{{ portfolio.tech }} </p>
   </div>
 </a>
 </div>
