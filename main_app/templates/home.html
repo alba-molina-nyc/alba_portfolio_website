@@ -15,20 +15,74 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
       <style>
-        body {
-          background-color: rgb(232,234,246)
+ 
+     #languages {
+      display: flex;
+    justify-content: center;
+     }
+       
+        #languages-left  {
+          list-style-type: none;
+          padding: 20px 40px 20px;
+          margin-bottom: 0;
+          margin: 0 0 2em 0;
+          list-style: none;
+          vertical-align: baseline;
+          box-sizing: inherit;
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 40px;
+        }
+
+
+
+
+        }
+
+
+        #languages-middle {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          vertical-align: baseline;
+          padding: 20px 40px 20px;
+          margin-bottom: 0;
+          margin-block-start: 1em;
+
+        }
+
+        #languages-right {
+          list-style-type: none;
+          padding: 20px 40px 20px;
+          margin-bottom: 0;
+          margin: 0 0 2em 0;
+          list-style: none;
+          vertical-align: baseline;
+          box-sizing: inherit;
+          display: block;
+          margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+
+  
         }
       </style>
     </head> 
-    <h1 class="black-text">About Pythonistar<img src="https://i.imgur.com/DHMRWkg.gif" height="100px" ></h1> 
+    <h1 class="black-text">About Pythonistar</h1> 
     <h5>Alba Molina</h5>
+ <a  href="{% url 'tldr' %}" class="waves-effect grey darken-3 btn-large" target="_blank">TLDR; Alba Molina</a>
+     
  <hr />
-<blockquote>
-      <img src="https://i.imgur.com/5Y1JUrz.png" class="materialboxed"  height="300px"> 
-      </blockquote>
-<blockquote>
-<img src="https://i.imgur.com/hZvpTQc.gif" height="65px"> <br/> <a  href="{% url 'tldr' %}" class="waves-effect grey darken-4 btn-large" target="_blank">TLDR; Alba Molina</a>
-</blockquote>
+ <img src="https://i.imgur.com/5Y1JUrz.png" class="materialboxed"  height="300px"> 
+ <!-- <center> -->
+
+
+
 
 <blockquote class="flow-text">
    Hi there! Thanks for checking out my website! My name is Alba Molina and I am a Full Stack Software Engineer. In one of my previous lives I was a Business Development Representative and moved my way up to leadership in the SaaS/tech industry. That's when I fell in love with the industry!
@@ -40,8 +94,9 @@
   <blockquote class="flow-text">
     Fast forward to my 24th birthday and I became an SDR! Boom I was selling software to enterprise businesses! Getting my feet wet in this industry made me realize that I not only wanted to be an entreprenuer... but a <b>tech entreprenuer</b>!<br>
   </blockquote> 
-<h5><img src="https://i.imgur.com/3ioyviR.gif" height="75px">
-"Turns out making technology sexy through words as a BDR made me realize that I also wanted to build sexy software! I am obsessed with making people's tedious day to day worklife easier so that they can spend time focusing on what really matters to them." </h5>
+<img src="https://i.imgur.com/3ioyviR.gif" height="75px">
+  <blockquote class="flow-text">
+"Turns out making technology sexy through words as a BDR made me realize that I also wanted to build sexy software! I am obsessed with making people's tedious day to day worklife easier so that they can spend time focusing on what really matters to them." </blockquote>
    
     <br>
     <blockquote class="flow-text">  My path from Business/Sales Development Leadership and into the developer world is intentionally geared torwards my ultimate goal of founding something of my own.<br> <img src="https://i.imgur.com/Rw48xGF.gif" height="105px">After 2.5 years growing and scaling fast growing software companies...I am excited to transition into the next stage in my career... 
@@ -52,6 +107,37 @@
 
 </blockquote> 
 
+<div id= "languages">
+<ul id= 'languages-left' >  
+  <li><img src="https://i.imgur.com/oFmUUEB.png" height="155px" alt="" id="CSS"></li>
+  <li><img src="https://i.imgur.com/uRRYcH8.png" height="155px" alt="" id="HTML"></li>
+  <li><img src="https://i.imgur.com/7O5ePuK.png" height="155px" alt="" id="python"></li>
+  <li><img src="https://i.imgur.com/dsofhNu.png" height="155px" alt="" id="JS"></li>
+  <li><img src="https://i.imgur.com/wJyxTYF.png" height="155px" alt="" id="nodejs"></li>
+  <li><img src="https://i.imgur.com/kDnpMIB.png" height="155px" alt="" id="jQuery"></li>
+</ul>
+<ul id= 'languages-middle'>
+  <li><img src="https://i.imgur.com/P8GWdMu.png" height="155px" alt="" id="mgdb"></li>
+  <li><img src="https://i.imgur.com/2WcUCs2.png" height="155px" alt="" id="mongoose"></li>
+  <li><img src="https://i.imgur.com/1oBZCV8.png" height="155px" alt="" id="postgresql"></li>
+  <li><img src="https://i.imgur.com/t4Hxl7O.png" height="155px" alt="" id="cloudinary"></li>
+  <li><img src="https://i.imgur.com/9060jbq.png" height="155px" alt="" id="disqus"></li>
+  <li><img src="https://i.imgur.com/sW7xkBl.png" height="155px" alt="" id="firebase"></li>
+</ul>
+<ul id='languages-right'>
+  <li><img src="https://i.imgur.com/POVgAvB.png" height="155px" id="aws"></li>
+  <li><img src="https://i.imgur.com/gEIimPd.png" height="155px"alt="" id="bootstrap"></li>
+  <li><img src="https://i.imgur.com/fpobn7B.png" height="155px" alt="" id="EJS"></li>
+  <li><img src="https://i.imgur.com/16cg5GP.png" height="155px" alt="" id="JS"></li>
+  <li><img src="https://i.imgur.com/uqWVhHL.png" height="155px" alt="" id="reactjs"></li>
+  <li><img src="https://i.imgur.com/CyQx3LA.png" height="155px" alt="" id="Express"></li>
+  <li><img src="https://i.imgur.com/9LocGtj.png" height="155px" alt="" id="django"></li>
+</ul>
+
+
+
+
+</div>
     <body>
     </body>
 
