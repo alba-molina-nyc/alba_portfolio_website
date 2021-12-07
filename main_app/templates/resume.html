@@ -1,49 +1,75 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<style>
+ 
+  #languages {
+   display: flex;
+ justify-content: center;
+  }
+    
+     #languages-left  {
+       list-style-type: none;
+       padding: 20px 40px 20px;
+       margin-bottom: 0;
+       margin: 0 0 2em 0;
+       list-style: none;
+       vertical-align: baseline;
+       box-sizing: inherit;
+       display: block;
+       margin-block-start: 1em;
+       margin-block-end: 1em;
+       margin-inline-start: 0px;
+       margin-inline-end: 0px;
+       padding-inline-start: 40px;
+     }
+     li {
+       padding-left: 100px;
+       padding-right: 100px;
+       padding-top: 20px;
+       padding-bottom: 50px;
+       text-align: center;
+     }
+
+
+
+     }
+
+
+     #languages-middle {
+       display: flex;
+       justify-content: center;
+       margin: 0;
+       vertical-align: baseline;
+       padding: 20px 40px 20px;
+       margin-bottom: 0;
+       margin-block-start: 1em;
+
+     }
+
+     #languages-right {
+       list-style-type: none;
+       padding: 20px 40px 20px;
+       margin-bottom: 0;
+       margin: 0 0 2em 0;
+       list-style: none;
+       vertical-align: baseline;
+       box-sizing: inherit;
+       display: block;
+       margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+     padding-inline-start: 40px;
+
+
+     }
+   </style>
+
 <h1 class="black-text">Resume</h1>
 <hr />
 
-<h6>
-  <ul>
-    <li>
-       HTML
-    </li>
-    <li>
-        CSS
-     </li>
-     <li>
-        Python💅🏼
-     </li>
-     <li>
-        JavaScript
-     </li>
-     <li>
-        React
-     </li>
-     <li>
-       OAuth
-     </li>
-     <li>
-        Google Firebase
-     </li>
-     <li>
-        MongoDB/Mongoose
-     </li>
-     <li>
-        PostgreSQL
-     </li>
-     <li>
-        Django💅🏼
-     </li>
-     <li>
-        Express
-     </li>
-     <li>
-        NodeJS
-     </li>
-</ul>
-</h6>
+
 
 
 <div class="card">
@@ -160,6 +186,37 @@
 
 
 
+<div id= "languages">
+   <ul id= 'languages-left' >  
+     <li><img src="https://i.imgur.com/oFmUUEB.png" height="155px" alt="" id="CSS"></li>
+     <li><img src="https://i.imgur.com/uRRYcH8.png" height="155px" alt="" id="HTML"></li>
+     <li><img src="https://i.imgur.com/7O5ePuK.png" height="155px" alt="" id="python"></li>
+     <li><img src="https://i.imgur.com/dsofhNu.png" height="155px" alt="" id="JS"></li>
+     <li><img src="https://i.imgur.com/wJyxTYF.png" height="155px" alt="" id="nodejs"></li>
+     <li><img src="https://i.imgur.com/kDnpMIB.png" height="155px" alt="" id="jQuery"></li>
+   </ul>
+   <ul id= 'languages-middle'>
+     <li><img src="https://i.imgur.com/P8GWdMu.png" height="155px" alt="" id="mgdb"></li>
+     <li><img src="https://i.imgur.com/2WcUCs2.png" height="155px" alt="" id="mongoose"></li>
+     <li><img src="https://i.imgur.com/1oBZCV8.png" height="155px" alt="" id="postgresql"></li>
+     <li><img src="https://i.imgur.com/t4Hxl7O.png" height="155px" alt="" id="cloudinary"></li>
+     <li><img src="https://i.imgur.com/9060jbq.png" height="155px" alt="" id="disqus"></li>
+     <li><img src="https://i.imgur.com/sW7xkBl.png" height="155px" alt="" id="firebase"></li>
+   </ul>
+   <ul id='languages-right'>
+     <li><img src="https://i.imgur.com/POVgAvB.png" height="155px" id="aws"></li>
+     <li><img src="https://i.imgur.com/gEIimPd.png" height="155px"alt="" id="bootstrap"></li>
+     <li><img src="https://i.imgur.com/fpobn7B.png" height="155px" alt="" id="EJS"></li>
+     <li><img src="https://i.imgur.com/16cg5GP.png" height="155px" alt="" id="JS"></li>
+     <li><img src="https://i.imgur.com/uqWVhHL.png" height="155px" alt="" id="reactjs"></li>
+     <li><img src="https://i.imgur.com/CyQx3LA.png" height="155px" alt="" id="Express"></li>
+     <li><img src="https://i.imgur.com/9LocGtj.png" height="155px" alt="" id="django"></li>
+   </ul>
+   
+   
+   
+   
+   </div>
 
 
 
