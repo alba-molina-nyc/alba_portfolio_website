@@ -7,7 +7,7 @@ urlpatterns = [
     # we will define all app-level urls in this list
     path('', views.home, name='home'),
     path('tldr', views.tldr, name='tldr'),
-    path('contact', views.contact, name='contact'),
+    path('contact/', views.contact, name='contact'),
     path('quote', views.quote, name='quote'),
     path('resume', views.resume, name='resume'),
     path('portfolios/', views.portfolios_index, name='index'),
