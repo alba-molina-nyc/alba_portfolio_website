@@ -1,11 +1,12 @@
 
    
 {% extends 'base.html' %} {% block content %}
-<center>
-<h1 class="black-text lighten-4">Portfolio List</h1>
-</center>
+
+<h1 class="black-text lighten-4">Portfolio </h1>
+
+
 {% for portfolio in portfolios %}
-<hr />
+
 <div class="card-panel hoverable">
   <center>
   <a href="{% url 'detail' portfolio.id %}">
