@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pythonistar</title>
 <!-- Local CSS -->
-<link rel="stylesheet" href="{% static 'css/materialize.css' %}">
-<script href="{% static 'css/script.css' %}">></script>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script href="{% static 'css/script.css' %}"></script>
 <!-- Materialize CSS -->
 <!-- cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script defer src="{% static 'script.js' %}"></script>
 <style>
   * {box-sizing: border-box;}
   
@@ -68,6 +69,7 @@
   }
   </style>
 </head>
+
 <div class="header">
   <a href="{% url 'home' %}" class="logo">Pythonistar</a>
 
