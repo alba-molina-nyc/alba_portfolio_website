@@ -33,6 +33,9 @@ def home(request):
 def tldr(request):
     return render(request, 'tldr.html')
 
+def tutoring(request):
+    return render(request, 'tutoring.html')
+
 def quote(request):
     if request.method == 'POST':
         form = QuoteForm(request.POST)
