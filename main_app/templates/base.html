@@ -5,33 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pythonistar</title>
 <!-- Local CSS -->
+
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <script href="{% static 'css/script.css' %}"></script>
+
 <!-- Materialize CSS -->
 <!-- cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script defer src="{% static 'script.js' %}"></script>
+<script defer src="{% static '/script.js' %}"></script>
 
 </head>
 
-<div class="header">
+
   <a href="{% url 'home' %}" class="logo">Pythonistar</a>
 
   <div class="header-right">
+
+  
     <a href="{% url 'index' %}">Portfolio</a>
     <a href="{% url 'resume' %}">Resume</a>
     <a href="{% url 'blogs' %}">Blog</a>
     <a href="{% url 'quote' %}">Quote</a>
     <a href="{% url 'contact' %}">Contact</a>
-    <!-- <a href="{% url 'tutoring' %}">Tutoring</a> -->
+    <a href="{% url 'tutoring' %}">Tutoring</a>
 
   </div>
-</div>
+
 <body>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
- 
-  <main class="container" >
+<main class="container" >
     {% block content %}
     {% endblock %}
   </main>
