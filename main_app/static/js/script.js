@@ -4,3 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 console.log("hellomotherfuckwer");
+
+function openSideNav(sideNav) {
+  let sideNav = document.getElementById("side-nav");
+  console.log(sideNav, "thisissidenav");
+}

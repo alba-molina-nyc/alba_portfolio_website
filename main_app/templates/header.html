@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pythonistar</title>
+<!-- Local CSS -->
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+<!-- Materialize CSS -->
+<!-- cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+{% block head_block %}{% endblock %}
+
+
+
+
+<script defer src="{% static 'js/script.js' %}"></script>
+
+</head>
+
+
+  <a href="{% url 'home' %}" class="logo">Pythonistar</a>
+
+  <div class="header-right">
+
+  
+    <a href="{% url 'index' %}">Portfolio</a>
+    <a href="{% url 'resume' %}">Resume</a>
+    <a href="{% url 'blogs' %}">Blog</a>
+    <a href="{% url 'quote' %}">Quote</a>
+    <a href="{% url 'contact' %}">Contact</a>
+    <a href="{% url 'tutoring' %}">Tutoring</a>
+
+  </div>
+
+
+
+
+
+  <a href="#" data-target="slide-out" class="sidenav-trigger" id="side-nav"><i class="material-icons">menu</i></a>
+
+<body>
+<main class="container" >
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+
+    All Rights Reserved, &copy; 2022 Pythonistar
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+{% block js_block %} 
+<script type="text/javascript" src= "{% static 'main_app/static/js/script.js' %}"></script>
+{% endblock %}
+
+<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+  </body>
+  </html>
+
+  <!-- <img src="https://i.imgur.com/AcUfLA5.png">  -->
